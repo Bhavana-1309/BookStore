@@ -1,0 +1,20 @@
+{
+  "name": "bookstore-root",
+  "version": "1.0.0",
+  "description": "Root folder for BookStore MERN Stack system",
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "cloudinary": "^2.10.0",
+    "multer": "^2.2.0",
+    "streamifier": "^0.1.1"
+  }
+}
