@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const path = require("path");
 
 // Load environment variables
 dotenv.config();
@@ -26,15 +27,18 @@ app.use('/api/books', require('./routes/bookRoutes'));
 app.use('/api/cart', require('./routes/cartRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
 
-// Health Check / Welcome route
-app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the BookStore API Service' });
-});
+// Serve React build in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/dist")));
 
-// 404 Endpoint handler
-app.use((req, res, next) => {
-  res.status(404).json({ message: 'API Endpoint not found' });
-});
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.json({ message: "Welcome to the BookStore API Service" });
+  });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {
