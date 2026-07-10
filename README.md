@@ -1,8 +1,23 @@
 # BookStore – MERN Stack Online Book Shopping System
 
-A beautiful, fully-functional, intermediate college-level full-stack **Online Book Shopping System** developed using the **MERN Stack** (MongoDB, Express.js, React.js, and Node.js). 
+A beautiful, fully-functional, intermediate college-level full-stack **Online Book Shopping System** developed using the **MERN Stack** (MongoDB, Express.js, React.js, and Node.js).
 
 This project incorporates user authentication, dynamic catalog search/filtering/sorting, database-backed shopping cart states, Cash on Delivery (COD) checkouts, and a secure administrator control panel.
+
+---
+
+## 🌐 Live Demo
+
+**Application:** https://bookstore-qhf0.onrender.com/
+
+> **Note:** This application is deployed on **Render's Free Tier**. If the service has been idle, the first request may take **20–30 seconds** (or occasionally up to a minute) while Render wakes up the server. After the initial startup, the application responds normally.
+
+### Demo Accounts
+
+| Role | Email | Password |
+|------|-------|----------|
+| Customer | `user@gmail.com` | `user123` |
+| Admin | `admin@gmail.com` | `admin123` |
 
 ---
 
@@ -89,14 +104,22 @@ npm run seed
 ```
 
 ### 5. Launch the Application
+
 Start both the backend server and React dev server concurrently from the root directory:
+
 ```bash
 npm run dev
 ```
-- **Frontend URL:** [http://localhost:5173](http://localhost:5173)
-- **Backend URL:** [http://localhost:5000](http://localhost:5000)
 
----
+**Local Development**
+
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:5000
+
+**Production Deployment**
+
+- Live Demo: https://bookstore-qhf0.onrender.com/
+```
 
 ## 🔑 Demo Login Accounts
 
@@ -108,3 +131,10 @@ Use the following pre-registered credentials to demonstrate or evaluate the syst
 | **Administrator** | `admin@gmail.com` | `admin123` |
 
 *Note: You can also use the **Quick Autofill buttons** on the Login page to fill these credentials automatically.*
+
+
+![MERN](https://img.shields.io/badge/Stack-MERN-3FA037)
+![React](https://img.shields.io/badge/React-19-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
