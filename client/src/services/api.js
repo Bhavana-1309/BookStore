@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 const API = axios.create({
   baseURL:
@@ -7,31 +7,18 @@ const API = axios.create({
       : "/api",
 });
 
-// Request interceptor to attach JWT token automatically
+// Attach JWT token automatically
 API.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
+
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
+
     return config;
   },
   (error) => Promise.reject(error)
-);
-
-export default API;
-// Request interceptor to attach JWT token automatically
-API.interceptors.request.use(
-  (config) => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
 );
 
 export default API;
