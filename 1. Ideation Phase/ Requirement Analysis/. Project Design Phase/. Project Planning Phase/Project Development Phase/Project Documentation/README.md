@@ -13,3 +13,6 @@ Advantages of Using MVC in This Project
 •	Testing: Each layer can be tested independently, especially the controllers and models.
 •	Collaboration-Friendly: Multiple developers can work simultaneously on different layers without conflict.
 
+<img width="731" height="406" alt="image" src="https://github.com/user-attachments/assets/3fdb8f3f-537c-4a15-b04f-62fef81fab54" />
+
+
