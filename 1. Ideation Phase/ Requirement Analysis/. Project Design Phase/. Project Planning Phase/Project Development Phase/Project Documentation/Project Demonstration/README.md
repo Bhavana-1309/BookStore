@@ -1,4 +1,8 @@
 <img width="675" height="847" alt="image" src="https://github.com/user-attachments/assets/3fd7501c-b551-4771-899a-ac40d662546a" />
+
+
+
+
 1. Start
 Users open the BookEase app to explore a wide collection of books.
 On first launch, the app may present a brief onboarding carousel highlighting key features — personalized recommendations, easy checkout, and order tracking — and prompt users to sign up or continue as a guest.
