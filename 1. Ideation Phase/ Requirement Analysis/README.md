@@ -1,3 +1,5 @@
+
+<img width="1080" height="1377" alt="Entity Relationship Diagram" src="https://github.com/user-attachments/assets/5a71c366-3b36-4f2f-8ade-5299649208e1" />
 # Requirement Analysis
 
 This folder contains the requirement analysis documents for the BookStore project.
