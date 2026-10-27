@@ -1,0 +1,13 @@
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+server/.env
+
+# Node.js dependencies
+node_modules/
+**/node_modules/
+
+# Frontend build output
+client/dist/
